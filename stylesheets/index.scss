@@ -1,0 +1,59 @@
+@import "reset.scss";
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#F1F1F1;
+}
+.music{
+    position: absolute;
+    right:10px;
+    top:10px;
+    width:40px;
+    height:40px;
+    -webkit-border-radius: 20px;
+    background-image:url(../images/mon.png);
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0 0 10px #111;
+    z-index:999999999;
+    opacity:0.8;
+    display:none;
+    &.pause{
+        background-image:url(../images/moff.png);
+    }
+    .btn{
+        width:100%;
+        height:100%;
+    }
+}
+.main{
+    width:100%;
+    position:relative;
+    .board{
+        width:100%;
+        &.one{
+            background:#006699;
+        }
+        &.three{
+            background:#00CC00;
+        }
+        &.five{
+            background:red;
+        }
+    }
+}
+.nnbtn{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background:#4DB849;
+    opacity:.2;
+    -webkit-transition:all ease-out .2s;
+    &.hover{
+        opacity:0
+    }
+}
