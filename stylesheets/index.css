@@ -176,8 +176,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    -webkit-transition: all ease-in 2s;
-    opacity: 0; }
+    /*        -webkit-transition:all ease-in 2s;
+        opacity:0;*/ }
     .main .board p {
       position: absolute;
       left: 0;
@@ -192,7 +192,7 @@ body {
       margin: 0;
       background: rgba(0, 0, 0, 0.3); }
     .main .board.active {
-      opacity: 1; }
+      /*opacity:1;*/ }
       .main .board.active p {
         -webkit-transform: translateY(-100px);
         opacity: 1;

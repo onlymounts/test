@@ -43,8 +43,8 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        -webkit-transition:all ease-in 2s;
-        opacity:0;
+/*        -webkit-transition:all ease-in 2s;
+        opacity:0;*/
         p{
             position: absolute;
             left:0;
@@ -60,7 +60,7 @@ body{
             background:rgba(0,0,0,.3);
         }
         &.active{
-            opacity:1;
+            /*opacity:1;*/
             p{
                 -webkit-transform:translateY(-100px);
                 opacity:1;
