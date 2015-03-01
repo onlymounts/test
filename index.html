@@ -33,12 +33,12 @@
                         "images/pics/12.jpg"
                     ]
                 }, function () {
-                    setTimeout(function(){
-                        $(".loading").transition().set("opacity").done(function(){
+                    setTimeout(function () {
+                        $(".loading").transition().set("opacity").done(function () {
                             $(this).remove();
-                        }).scope().css("opacity",0);
+                        }).scope().css("opacity", 0);
                         $.Boot({basePath: "javascripts/packets/"});
-                    },3000);
+                    }, 3000);
                 }, function (e) {
                     $(".bar").width(e.progress + "%");
                 });
@@ -47,45 +47,47 @@
         <title>Happy Birthday This Year</title>
     </head>
     <body data-view="root" data-view-id="root">
-        <div class="music" data-view="main.music" data-view-id="music" data-parent-view="root">
-            <div class="btn"></div>
-        </div>
-        <div class="main" data-view="main.boards" data-view-id="main" data-parent-view="root" style='display:none;'>
-            <div class="board pic_1">
-                <p>生日是指一个人出生的日子</p>
+        <div class="content">
+            <div class="music" data-view="main.music" data-view-id="music" data-parent-view="root">
+                <div class="btn"></div>
             </div>
-            <div class="board pic_2">
-                <p>在希腊文化里，希腊人相信人人都有一个精灵保护。精灵在人出生时已在旁侍候，并且看顾他的一生</p>
-            </div>
-            <div class="board pic_3">
-                <p>除了精灵，一生里会有父母、爱人、亲戚、朋友、同事……出现在你的生命之中陪伴着你</p>
-            </div>
-            <div class="board pic_4">
-                <p>珍惜每一次的相处，因为也许不会再有下一次……</p>
-            </div>
-            <div class="board pic_5">
-                <p>每个人，一辈子会遇到许多的不确定和不相信，如经受挫折、打击，遭受冷眼、白眼，无数次陷入困境，感到彷徨，甚至是无助……</p>
-            </div>
-            <div class="board pic_6">
-                <p>每个人，一辈子也会遇到无条件的支持和绝对的相信。你的一生也许他只借一程，但他会出现在你最需要的时候，无论何时何地</p>
-            </div>
-            <div class="board pic_7">
-                <p>根据民间的传统信仰，在生日点燃的蜡烛具有神奇的力量，能够使愿望实现</p>
-            </div>
-            <div class="board pic_8">
-                <p>在我的生日愿望里，我会加上这条：希这个姑娘未来的关键词会是：100斤 优雅 智慧 独立 新女性……还有，一定要幸福</p>
-            </div>
-            <div class="board pic_9">
-                <p>这个姑娘，18岁生日快乐！</p>
-            </div>
-            <div class="board pic_10">
-                <p>摄于2013年4月3日，北京白堆子宿舍</p>
-            </div>
-            <div class="board pic_11">
-                <p>摄于2014年3月9日，北京五路居宿舍</p>
-            </div>
-            <div class="board pic_12">
-                <p>幸福永久，生日快乐！</p>
+            <div class="main" data-view="main.boards" data-view-id="main" data-parent-view="root" style='display:none;'>
+                <div class="board pic_1">
+                    <p>生日是指一个人出生的日子</p>
+                </div>
+                <div class="board pic_2">
+                    <p>在希腊文化里，希腊人相信人人都有一个精灵保护。精灵在人出生时已在旁侍候，并且看顾他的一生</p>
+                </div>
+                <div class="board pic_3">
+                    <p>除了精灵，一生里会有父母、爱人、亲戚、朋友、同事……出现在你的生命之中陪伴着你</p>
+                </div>
+                <div class="board pic_4">
+                    <p>珍惜每一次的相处，因为也许不会再有下一次……</p>
+                </div>
+                <div class="board pic_5">
+                    <p>每个人，一辈子会遇到许多的不确定和不相信，如经受挫折、打击，遭受冷眼、白眼，无数次陷入困境，感到彷徨，甚至是无助……</p>
+                </div>
+                <div class="board pic_6">
+                    <p>每个人，一辈子也会遇到无条件的支持和绝对的相信。你的一生也许他只借一程，但他会出现在你最需要的时候，无论何时何地</p>
+                </div>
+                <div class="board pic_7">
+                    <p>根据民间的传统信仰，在生日点燃的蜡烛具有神奇的力量，能够使愿望实现</p>
+                </div>
+                <div class="board pic_8">
+                    <p>在我的生日愿望里，我会加上这条：希这个姑娘未来的关键词会是：100斤 优雅 智慧 独立 新女性……还有，一定要幸福</p>
+                </div>
+                <div class="board pic_9">
+                    <p>这个姑娘，18岁生日快乐！</p>
+                </div>
+                <div class="board pic_10">
+                    <p>摄于2013年4月3日，北京白堆子宿舍</p>
+                </div>
+                <div class="board pic_11">
+                    <p>摄于2014年3月9日，北京五路居宿舍</p>
+                </div>
+                <div class="board pic_12">
+                    <p>幸福永久，生日快乐！</p>
+                </div>
             </div>
         </div>
         <div class="loading"><div class='cake'></div><div class="progress"><div class='bar'></div></div></div>
