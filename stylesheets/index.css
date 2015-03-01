@@ -140,6 +140,12 @@ html, body {
   overflow: hidden;
   background: #F1F1F1; }
 
+body {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
 .music {
   position: absolute;
   right: 10px;
@@ -165,13 +171,56 @@ html, body {
   width: 100%;
   position: relative; }
   .main .board {
-    width: 100%; }
-    .main .board.one {
-      background: #006699; }
-    .main .board.three {
-      background: #00CC00; }
-    .main .board.five {
-      background: red; }
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: all ease-in 2s;
+    opacity: 0; }
+    .main .board p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -100px;
+      display: block;
+      color: white;
+      -webkit-transition: all ease-in 2s 2s;
+      opacity: 0;
+      font-size: 20px;
+      padding: 20px;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.3); }
+    .main .board.active {
+      opacity: 1; }
+      .main .board.active p {
+        -webkit-transform: translateY(-100px);
+        opacity: 1;
+        text-shadow: 2px 2px #111; }
+    .main .board.pic_1 {
+      background-image: url(../images/pics/1.jpg); }
+    .main .board.pic_2 {
+      background-image: url(../images/pics/2.jpg); }
+    .main .board.pic_3 {
+      background-image: url(../images/pics/3.jpg); }
+    .main .board.pic_4 {
+      background-image: url(../images/pics/4.jpg); }
+    .main .board.pic_5 {
+      background-image: url(../images/pics/5.jpg); }
+    .main .board.pic_6 {
+      background-image: url(../images/pics/6.jpg); }
+    .main .board.pic_7 {
+      background-image: url(../images/pics/7.jpg); }
+    .main .board.pic_8 {
+      background-image: url(../images/pics/8.jpg); }
+    .main .board.pic_9 {
+      background-image: url(../images/pics/9.jpg); }
+    .main .board.pic_10 {
+      background-image: url(../images/pics/10.jpg); }
+    .main .board.pic_11 {
+      background-image: url(../images/pics/11.jpg); }
+    .main .board.pic_12 {
+      background-image: url(../images/pics/12.jpg); }
 
 .nnbtn {
   position: absolute;

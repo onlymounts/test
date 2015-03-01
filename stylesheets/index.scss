@@ -5,6 +5,12 @@ html,body{
     overflow:hidden;
     background:#F1F1F1;
 }
+body{
+    background-image:url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .music{
     position: absolute;
     right:10px;
@@ -33,14 +39,69 @@ html,body{
     position:relative;
     .board{
         width:100%;
-        &.one{
-            background:#006699;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-transition:all ease-in 2s;
+        opacity:0;
+        p{
+            position: absolute;
+            left:0;
+            right:0;
+            bottom:-100px;
+            display:block;
+            color:white;
+            -webkit-transition:all ease-in 2s 2s;
+            opacity:0;
+            font-size:20px;
+            padding:20px;
+            margin:0;
+            background:rgba(0,0,0,.3);
         }
-        &.three{
-            background:#00CC00;
+        &.active{
+            opacity:1;
+            p{
+                -webkit-transform:translateY(-100px);
+                opacity:1;
+                text-shadow: 2px 2px #111;
+            }
         }
-        &.five{
-            background:red;
+        &.pic_1{
+            background-image: url(../images/pics/1.jpg);
+        }
+        &.pic_2{
+            background-image: url(../images/pics/2.jpg);
+        }
+        &.pic_3{
+            background-image: url(../images/pics/3.jpg);
+        }
+        &.pic_4{
+            background-image: url(../images/pics/4.jpg);
+        }
+        &.pic_5{
+            background-image: url(../images/pics/5.jpg);
+        }
+        &.pic_6{
+            background-image: url(../images/pics/6.jpg);
+        }
+        &.pic_7{
+            background-image: url(../images/pics/7.jpg);
+        }
+        &.pic_8{
+            background-image: url(../images/pics/8.jpg);
+        }
+        &.pic_9{
+            background-image: url(../images/pics/9.jpg);
+        }
+        &.pic_10{
+            background-image: url(../images/pics/10.jpg);
+        }
+        &.pic_11{
+            background-image: url(../images/pics/11.jpg);
+        }
+        &.pic_12{
+            background-image: url(../images/pics/12.jpg);
         }
     }
 }

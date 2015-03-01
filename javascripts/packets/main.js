@@ -43,6 +43,7 @@ Module({
             e.preventDefault();
             e.stopPropagation();
         });
+        this.gotoBoard(0);
     },
     gotoBoard: function (num) {
         if (num >= 0 && num < this.size) {
