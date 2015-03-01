@@ -141,10 +141,34 @@ html, body {
   background: #F1F1F1; }
 
 body {
-  background-image: url(../images/logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  background: url(../images/bgg.png); }
+
+.loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999999999;
+  background: url(../images/bgg.png); }
+  .loading .cake {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    top: 0;
+    background: url(../images/bggg.png) no-repeat center; }
+  .loading .progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background: rgba(183, 162, 124, 0.5); }
+    .loading .progress .bar {
+      width: 0;
+      height: 50px;
+      background: rgba(77, 184, 73, 0.9); }
 
 .music {
   position: absolute;
@@ -175,9 +199,7 @@ body {
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    /*        -webkit-transition:all ease-in 2s;
-        opacity:0;*/ }
+    background-size: cover; }
     .main .board p {
       position: absolute;
       left: 0;
@@ -185,18 +207,16 @@ body {
       bottom: -100px;
       display: block;
       color: white;
-      -webkit-transition: all ease-in 2s 2s;
+      -webkit-transition: all ease-in 2s;
       opacity: 0;
       font-size: 20px;
       padding: 20px;
       margin: 0;
       background: rgba(0, 0, 0, 0.3); }
-    .main .board.active {
-      /*opacity:1;*/ }
-      .main .board.active p {
-        -webkit-transform: translateY(-100px);
-        opacity: 1;
-        text-shadow: 2px 2px #111; }
+    .main .board.active p {
+      -webkit-transform: translateY(-100px);
+      opacity: 1;
+      text-shadow: 1px 1px #111; }
     .main .board.pic_1 {
       background-image: url(../images/pics/1.jpg); }
     .main .board.pic_2 {
